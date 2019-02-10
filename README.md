@@ -1,6 +1,6 @@
 # API para CRUD para eventos
 
-### Comments
+## Comments
 #### listar todos os comentarios:
 GET http://localhost:3000/comments
 #### listar comentario especifico
@@ -18,7 +18,7 @@ PUT http://localhost:3000/comments
 #### deletar comentario
 DELETE http://localhost:3000/comments/1
 
-### Events 
+## Events 
 #### listar todos os eventos
 GET http://localhost:3000/events
 #### listar evento especifico
@@ -36,7 +36,7 @@ PUT http://localhost:3000/events
 #### deletar evento
 DELETE http://localhost:3000/events/1
 
-### User
+## User
 #### listar todos os usuarios
 GET http://localhost:3000/users
 #### listar usuario especifico
@@ -54,7 +54,7 @@ PUT GET http://localhost:3000/users
 #### deletar usuario
 DELETE http://localhost:3000/users/1
 
-### Report
+## Report
 #### listar todos os reports
 GET http://localhost:3000/reports
 #### listar report especifico
