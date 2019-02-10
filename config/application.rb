@@ -1,6 +1,7 @@
 require_relative 'boot'
 
 require "rails"
+require "pdfkit"
 # Pick the frameworks you want:
 require "active_model/railtie"
 require "active_job/railtie"
@@ -19,6 +20,8 @@ Bundler.require(*Rails.groups)
 
 module EventControl
   class Application < Rails::Application
+ 
+
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
 

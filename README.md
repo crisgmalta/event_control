@@ -1,24 +1,27 @@
-# README
+# event_control API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## API para CRUD para
+* Comments
+* Events 
+* User
 
-Things you may want to cover:
 
-* Ruby version
 
-* System dependencies
+## Dependencias
+* ruby 2.4.4
 
-* Configuration
+## Setup do projeto
+Para configuar este projeto clone este repositorio e execute
+* bundle install 
+* rails db:create
+* rails db:migrate 
+* rails db:seed
+* rails s (API estará disponível na porta 3000)
 
-* Database creation
+## Como executar testes
+* rake spec
+* rspec spec/controllers/comments_controller_spec.rb
 
-* Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Como gerar relatorio 
+http://localhost:3000/comments/report

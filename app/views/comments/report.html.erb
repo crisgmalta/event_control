@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Comment report</title>
+	<style type="text/css">
+		body {
+			background: #CACACA;
+			max-width: 600px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Comments</h1>
+	
+
+	<table border="1" style="border-collapse: collapse; width:100%;" >
+		<thead>
+			<tr>
+				<th style="min-width: 250px;">Text</th>
+				<th style="min-width: 150px;">User name</th>
+				<th style="min-width: 150px;">Event</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<% @comments.each do |comment| %>
+			<tr>
+				<td><%= comment.text %></td>
+				<td><%= comment.user.name %></td>
+				<td><%= comment.event.name %></td>
+			</tr>
+			<% end %>
+		</tbody>
+	</table>
+</body>
+</html>
