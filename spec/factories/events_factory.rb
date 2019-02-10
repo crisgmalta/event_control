@@ -4,6 +4,5 @@ FactoryBot.define do
     description {Faker::Nation.capital_city}
     lat { Faker::Number.number(8) }
     lng { Faker::Number.number(8) }
-    
   end
 end

@@ -12,3 +12,5 @@ FactoryBot.create_list(:user, 10)
 FactoryBot.create_list(:comment, 10)
 
 FactoryBot.create_list(:event, 10)
+
+FactoryBot.create_list(:report, 10)

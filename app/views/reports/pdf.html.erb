@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Comment report</title>
+  </head>
+  <body>
+    <h1>Report</h1>	
+
+    <table border="1" style="border-collapse: collapse; width:100%;" >
+      <thead>
+        <tr>
+          <th style="min-width: 250px;">Coment</th>
+          <th style="min-width: 150px;">User name</th>
+          <th style="min-width: 100px;">Denounce</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @reports.each do |report| %>
+          <tr>
+            <td><%= report.comment.text %></td>
+            <td><%= report.user.name %></td>
+            <td><%= report.comment.denounce %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </body>
+</html>

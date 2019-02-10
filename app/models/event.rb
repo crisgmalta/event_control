@@ -1,5 +1,5 @@
 class Event < ApplicationRecord
-	has_many :comments
+  has_many :comments
 
-	validates :name, :description, :lat, :lng, presence:true
+  validates :name, :description, :lat, :lng, presence: true
 end

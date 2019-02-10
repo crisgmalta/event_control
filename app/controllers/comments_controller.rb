@@ -7,16 +7,6 @@ class CommentsController < ApplicationController
     render json: @comments
   end
 
-  def report
-    @comments = Comment.all
-    
-    html = ERB.new(File.read "app/views/comments/report.html.erb").result(binding)
-    kit = PDFKit.new(html, page_size: 'A4', dpi: 900)
-    pdf = kit.to_pdf
-
-    send_data(pdf, filename: 'report.pdf', disposition: 'inline', type: :pdf)
-  end
-
   def show
     render json: @comment
   end
@@ -44,11 +34,11 @@ class CommentsController < ApplicationController
   end
 
   private
-    def set_comment
-      @comment = Comment.find(params[:id])
-    end
-
-    def comment_params
-      params.require(:comment).permit(:text, :user_id, :event_id)
-    end
+  def set_comment
+    @comment = Comment.find(params[:id])
   end
+
+  def comment_params
+    params.require(:comment).permit(:text, :user_id, :event_id)
+  end
+end
