@@ -11,7 +11,7 @@ POST http://localhost:3000/comments
 { "comment": { "text": "A sample comment", "user_id": 1, "event_id": 1, "denounce": false } }
 ```
 #### atualizar comentario
-PUT http://localhost:3000/comments
+PUT http://localhost:3000/comments/1
 ```json
 { "comment": { "text": "A sample comment", "user_id": 1, "event_id": 1, "denounce": false } }
 ```
@@ -29,7 +29,7 @@ POST http://localhost:3000/events
 { "event": { "name": "An event", "description": "Georgetown", "lat": 31159238, "lng": 15930673 } }
 ```
 #### atualizar evento
-PUT http://localhost:3000/events
+PUT http://localhost:3000/events/1
 ```json
 { "event": { "name": "An event", "description": "Georgetown", "lat": 31159238, "lng": 15930673 } }
 ```
@@ -47,7 +47,7 @@ POST http://localhost:3000/users
 { "user": { "name": "Philip Kirlin", "email": "maryrose@strackewilliamson.biz", "password": "S2EsUuC559" } }
 ```
 #### atualizar usuario
-PUT GET http://localhost:3000/users
+PUT GET http://localhost:3000/users/1
 ```json
 { "user": { "name": "Philip Kirlin", "email": "maryrose@strackewilliamson.biz", "password": "S2EsUuC559" } }
 ```
@@ -67,7 +67,7 @@ POST http://localhost:3000/reports
 { "report": { "user_id": 1, "comment_id": 1 } }
 ```
 #### atualizar report
-PUT http://localhost:3000/reports
+PUT http://localhost:3000/reports/1
 ```json
 { "report": { "user_id": 1, "comment_id": 1 } }
 ```
